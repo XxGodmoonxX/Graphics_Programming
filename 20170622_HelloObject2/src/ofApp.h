@@ -24,11 +24,17 @@ class ofApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
 		
     //ここに追加
-    static const int num = 100;
+//    static const int num = 100;
     //const 定数 staticはつけると思っとけ
     //この100はこれによって変えられなくなる
-    Medama medamas[num];
+//    Medama medamas[num];
     
     Cube cube;
+    
+    //↓20170629
+    //Medama型の動的配列medamaArray作成
+    vector<Medama> medamaArray;
+    //int型の動的配列hogeを作成
+//    vector<int> hoge;
     
 };

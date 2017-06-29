@@ -2,23 +2,36 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-
+    for (int i = 0; i < 100; i++) {
+        Medama tmp = Medama(); //tmp = temporary 一時的なやつ
+        medamaArray.push_back(tmp);
+    }
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    for (int i = 0; i < num; i++) {
-        medamas[i].update();
+    
+    for (int i = 0; i < medamaArray.size(); i++) {
+        medamaArray[i].update();
     }
+    
+//    for (int i = 0; i < num; i++) {
+//        medamas[i].update();
+//    }
     
     cube.update();
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    for (int i = 0; i < num; i++) {
-        medamas[i].draw();
+    
+    for (int i = 0; i < medamaArray.size(); i++) {
+        medamaArray[i].draw();
     }
+    
+//    for (int i = 0; i < num; i++) {
+//        medamas[i].draw();
+//    }
     
     cube.draw();
     
@@ -30,6 +43,23 @@ void ofApp::draw(){
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
+    
+    if (key == 'n') {
+        Medama tmp = Medama();
+        medamaArray.push_back(tmp);
+    }
+    
+    if (key == 'd') {
+        if (medamaArray.size() > 0) {
+            medamaArray.pop_back();
+            std::cout << "pop_back is called" << "\n"; //プログラムが実行されてるか確認
+        }
+        
+    }
+    
+    if (key == 'c') {
+        medamaArray.clear();
+    }
 
 }
 
