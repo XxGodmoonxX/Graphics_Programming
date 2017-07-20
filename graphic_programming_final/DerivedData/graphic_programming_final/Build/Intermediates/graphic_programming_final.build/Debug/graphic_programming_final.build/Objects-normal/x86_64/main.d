@@ -551,4 +551,25 @@ dependencies: \
   ../../../libs/openFrameworks/video/ofAVFoundationPlayer.h \
   ../../../libs/openFrameworks/3d/ofCamera.h \
   ../../../libs/openFrameworks/3d/ofEasyCam.h \
-  /Users/xxgodmoonxx/Documents/openFrameworks/of_v0.9.8_osx_release/apps/myApps/graphic_programming_final/src/ofApp.h
+  /Users/xxgodmoonxx/Documents/openFrameworks/of_v0.9.8_osx_release/apps/myApps/graphic_programming_final/src/ofApp.h \
+  /Users/xxgodmoonxx/Documents/openFrameworks/of_v0.9.8_osx_release/apps/myApps/graphic_programming_final/src/midi.hpp \
+  /Users/xxgodmoonxx/Documents/openFrameworks/of_v0.9.8_osx_release/addons/ofxMidi/src/ofxMidi.h \
+  ../../../addons/ofxMidi/src/ofxMidiIn.h \
+  ../../../addons/ofxMidi/src/ofxBaseMidi.h \
+  ../../../addons/ofxMidi/src/ofxMidiConstants.h \
+  ../../../addons/ofxMidi/src/ofxMidiMessage.h \
+  ../../../addons/ofxMidi/src/ofxMidiTypes.h \
+  ../../../addons/ofxMidi/src/desktop/ofxRtMidiIn.h \
+  /Users/xxgodmoonxx/Documents/openFrameworks/of_v0.9.8_osx_release/addons/ofxMidi/libs/rtmidi/RtMidi.h \
+  ../../../addons/ofxMidi/src/ofxMidiOut.h \
+  ../../../addons/ofxMidi/src/desktop/ofxRtMidiOut.h \
+  /Users/xxgodmoonxx/Documents/openFrameworks/of_v0.9.8_osx_release/addons/ofxGui/src/ofxGui.h \
+  ../../../addons/ofxGui/src/ofxToggle.h \
+  ../../../addons/ofxGui/src/ofxBaseGui.h \
+  ../../../addons/ofxGui/src/ofxSlider.h \
+  ../../../addons/ofxGui/src/ofxSliderGroup.h \
+  ../../../addons/ofxGui/src/ofxGuiGroup.h \
+  ../../../addons/ofxGui/src/ofxButton.h \
+  ../../../addons/ofxGui/src/ofxPanel.h \
+  ../../../addons/ofxGui/src/ofxLabel.h \
+  /Users/xxgodmoonxx/Documents/openFrameworks/of_v0.9.8_osx_release/apps/myApps/graphic_programming_final/src/particle.hpp

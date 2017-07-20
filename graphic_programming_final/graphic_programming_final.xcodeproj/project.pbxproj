@@ -13,10 +13,11 @@
 		3AEFE4FA8AD5C72671AD07F8 /* ofxRtMidiOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 712B183BC00EBFFB1EEA5AB8 /* ofxRtMidiOut.cpp */; };
 		483908258D00B98B4BE69F07 /* ofxLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78D67A00EB899FAC09430597 /* ofxLabel.cpp */; };
 		5CBB2AB3A60F65431D7B555D /* ofxButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C88333E71C9457E441C33474 /* ofxButton.cpp */; };
-		631702104AFC104323A9EB79 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81AC32CCCB56FAABA3E1BDE0 /* CoreMIDI.framework */; };
 		63D0FD8734D5760B8080C901 /* RtMidi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ABDEF0ACF05BF28F5C74E008 /* RtMidi.cpp */; };
 		63F9FE1D90234FA6DE6F509E /* ofxMidi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E238CCDE032640E0FEBFAD82 /* ofxMidi.cpp */; };
+		824292AF1F2075970066526C /* particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 824292AD1F2075970066526C /* particle.cpp */; };
 		82B152291F1B7EA5004F57DA /* midi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 82B152271F1B7EA5004F57DA /* midi.cpp */; };
+		82B152311F1BF287004F57DA /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82B152301F1BF287004F57DA /* CoreMIDI.framework */; };
 		837220E80EB56CD44AD27F2A /* ofxSlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15F2C6477A769C03A56D1401 /* ofxSlider.cpp */; };
 		83D9F930112E0944444124EE /* ofxMidiOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04F77E5C73A62E2E77C78EC6 /* ofxMidiOut.cpp */; };
 		856AA354D08AB4B323081444 /* ofxBaseGui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9604B925D32EE39065747725 /* ofxBaseGui.cpp */; };
@@ -77,8 +78,11 @@
 		802251BAF1B35B1D67B32FD0 /* ofxSliderGroup.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSliderGroup.cpp; path = ../../../addons/ofxGui/src/ofxSliderGroup.cpp; sourceTree = SOURCE_ROOT; };
 		81436E53CC4A77E326F659C3 /* ofxMidiOut.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxMidiOut.h; path = ../../../addons/ofxMidi/src/ofxMidiOut.h; sourceTree = SOURCE_ROOT; };
 		81AC32CCCB56FAABA3E1BDE0 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = /System/Library/Frameworks/CoreMIDI.framework; sourceTree = "<group>"; };
+		824292AD1F2075970066526C /* particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = particle.cpp; sourceTree = "<group>"; };
+		824292AE1F2075970066526C /* particle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = particle.hpp; sourceTree = "<group>"; };
 		82B152271F1B7EA5004F57DA /* midi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = midi.cpp; sourceTree = "<group>"; };
 		82B152281F1B7EA5004F57DA /* midi.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = midi.hpp; sourceTree = "<group>"; };
+		82B152301F1BF287004F57DA /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
 		87F26B4B24CBD428AD9EEBAA /* ofxBaseGui.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxBaseGui.h; path = ../../../addons/ofxGui/src/ofxBaseGui.h; sourceTree = SOURCE_ROOT; };
 		89449E3044D456F7DE7BEA14 /* ofxPanel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxPanel.h; path = ../../../addons/ofxGui/src/ofxPanel.h; sourceTree = SOURCE_ROOT; };
 		907C5B5E104864A2D3A25745 /* ofxToggle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxToggle.cpp; path = ../../../addons/ofxGui/src/ofxToggle.cpp; sourceTree = SOURCE_ROOT; };
@@ -99,8 +103,8 @@
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E4B69B5B0A3A1756003C02F2 /* graphic_programming_finalDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = graphic_programming_finalDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
-		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
-		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
+		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
 		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
 		E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../../libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
 		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
@@ -113,8 +117,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82B152311F1BF287004F57DA /* CoreMIDI.framework in Frameworks */,
 				E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */,
-				631702104AFC104323A9EB79 /* CoreMIDI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +164,14 @@
 			children = (
 			);
 			name = local_addons;
+			sourceTree = "<group>";
+		};
+		82B1522F1F1BF286004F57DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82B152301F1BF287004F57DA /* CoreMIDI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		945CEFADFB0DF400A92A507C /* rtmidi */ = {
@@ -253,6 +265,7 @@
 				BB4B014C10F69532006C3DED /* addons */,
 				6948EE371B920CB800B5AC1A /* local_addons */,
 				E4B69B5B0A3A1756003C02F2 /* graphic_programming_finalDebug.app */,
+				82B1522F1F1BF286004F57DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -264,6 +277,8 @@
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
 				82B152271F1B7EA5004F57DA /* midi.cpp */,
 				82B152281F1B7EA5004F57DA /* midi.hpp */,
+				824292AD1F2075970066526C /* particle.cpp */,
+				824292AE1F2075970066526C /* particle.hpp */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -381,6 +396,7 @@
 				63F9FE1D90234FA6DE6F509E /* ofxMidi.cpp in Sources */,
 				0BFC9C20FD7E3C8D5873AA97 /* ofxMidiIn.cpp in Sources */,
 				C6FE64F74F1EA1D98C8F9847 /* ofxMidiMessage.cpp in Sources */,
+				824292AF1F2075970066526C /* particle.cpp in Sources */,
 				83D9F930112E0944444124EE /* ofxMidiOut.cpp in Sources */,
 				63D0FD8734D5760B8080C901 /* RtMidi.cpp in Sources */,
 			);

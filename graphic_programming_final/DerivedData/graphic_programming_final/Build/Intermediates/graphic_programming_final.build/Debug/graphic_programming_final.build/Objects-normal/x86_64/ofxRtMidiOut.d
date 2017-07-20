@@ -2,11 +2,10 @@ dependencies: \
   /Users/xxgodmoonxx/Documents/openFrameworks/of_v0.9.8_osx_release/addons/ofxMidi/src/desktop/ofxRtMidiOut.cpp \
   ../../../addons/ofxMidi/src/desktop/ofxRtMidiOut.h \
   /Users/xxgodmoonxx/Documents/openFrameworks/of_v0.9.8_osx_release/addons/ofxMidi/libs/rtmidi/RtMidi.h \
-  /Users/xxgodmoonxx/Documents/openFrameworks/of_v0.9.8_osx_release/addons/ofxMidi/src/ofxMidiConstants.h \
+  ../../../addons/ofxMidi/src/desktop/../ofxBaseMidi.h \
   ../../../libs/openFrameworks/utils/ofConstants.h \
   ../../../libs/glew/include/GL/glew.h \
   ../../../libs/tess2/include/tesselator.h \
-  ../../../addons/ofxMidi/src/desktop/../ofxBaseMidi.h \
   ../../../libs/openFrameworks/utils/ofUtils.h \
   ../../../libs/utf8cpp/include/utf8.h \
   ../../../libs/utf8cpp/include/utf8/checked.h \
@@ -409,6 +408,7 @@ dependencies: \
   ../../../libs/openFrameworks/math/ofVec3f.h \
   ../../../libs/openFrameworks/math/ofVec2f.h \
   ../../../libs/openFrameworks/math/ofVec4f.h \
+  ../../../addons/ofxMidi/src/ofxMidiConstants.h \
   ../../../addons/ofxMidi/src/ofxMidiMessage.h \
   ../../../libs/openFrameworks/events/ofEvents.h \
   ../../../libs/openFrameworks/events/ofEventUtils.h \

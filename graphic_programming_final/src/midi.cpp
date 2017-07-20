@@ -8,6 +8,10 @@
 
 #include "midi.hpp"
 
+Midi::Midi() {
+    
+}
+
 void Midi::setup() {
     
     //
@@ -137,8 +141,61 @@ void Midi::update() {
 }
 
 void Midi::draw() {
-    ofSetColor(155, 0, 0);
+
+    ofSetColor(155,0,0);
     
     ofNoFill();
-    ofRect(0, 30, ofGetWidth(), 70);
+    ofRect(0,30,ofGetWidth(),70);
+    ofRect(0,110,ofGetWidth(),ofGetHeight()-120);
+    
+    ofSetColor(0);
+    ofDrawBitmapString("KORG NANO KONTROL 2 ", 40,20);
+    
+    //Track
+    ofDrawBitmapString("trackLeft = " + ofToString(buttonTrackLeft), 40,50);
+    ofDrawBitmapString("trackRight = " + ofToString(buttonTrackRight), 170,50);
+    
+    //Maker
+    ofDrawBitmapString("cycle = " + ofToString(buttonCycle), 40,70);
+    ofDrawBitmapString("markerSet = " + ofToString(buttonMarkerSet), 310,70);
+    ofDrawBitmapString("markerLeft = " + ofToString(buttonMarkerLeft), 450,70);
+    ofDrawBitmapString("markerRight = " + ofToString(buttonMarkerRight), 590,70);
+    
+    //Transport
+    ofDrawBitmapString("Rewind = " + ofToString(buttonRewind), 40,90);
+    ofDrawBitmapString("FastForward = " + ofToString(buttonFastForward), 170,90);
+    ofDrawBitmapString("Stop = " + ofToString(buttonStop), 310,90);
+    ofDrawBitmapString("Play = " + ofToString(buttonPlay), 450,90);
+    ofDrawBitmapString("Record = " + ofToString(buttonRecord), 590,90);
+    
+    
+    for (int i = 0; i < 8; i++) {
+        //Sliders
+        ofDrawBitmapString("slider[i+1] = " + ofToString(sliders[i]), 40, 130 + 20*(i-1));
+        
+        //knobs
+        ofDrawBitmapString("knobs[i+1] = " + ofToString(knobs[i]), 180, 130 + 20*(i-1));
+        
+        //Solo Buttons
+        ofDrawBitmapString("SoloButton[i+1] = " + ofToString(buttonSolo[i]), 320, 130 + 20*(i-1));
+        
+        //Mute Buttons
+        ofDrawBitmapString("MuteButton[i+1] = " + ofToString(buttonMute[i]), 460, 130 + 20*(i-1));
+        
+        //Record Buttons
+        ofDrawBitmapString("RecButton[I+1] = " + ofToString(buttonRec[i]), 600, 130 + 20*(i-1));
+    }
+}
+
+void Midi::exit() {
+    
+    // clean up
+    midiIn.closePort();
+    midiIn.removeListener(this);
+}
+
+void Midi::newMidiMessage(ofxMidiMessage& msg) {
+    
+    // make a copy of the latest message
+    midiMessage = msg;
 }

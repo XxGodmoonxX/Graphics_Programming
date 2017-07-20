@@ -1,6 +1,9 @@
 #pragma once
 
 #include "ofMain.h"
+#include "midi.hpp"
+#include "ofxGui.h"
+#include "particle.hpp"
 
 class ofApp : public ofBaseApp{
 
@@ -20,5 +23,18 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
+    
+    float positionX;
+    
+    float pmouseX;
+    float pmouseY;
+    
+    Particle particles[500];
+    
+    Midi midi;
+    
+    ofxPanel gui;
+    ofxSlider<int> knob[8];
+    ofxSlider<int> slider[8];
 		
 };
